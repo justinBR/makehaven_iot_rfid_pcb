@@ -1065,8 +1065,8 @@ With round pins</description>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="B1" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="PS1720P02_PIEZO_BUZZER" device="" package3d_urn="urn:adsk.eagle:package:493553/3"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="mmbt3904"/>
-<part name="R5" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100"/>
-<part name="R6" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1k"/>
+<part name="R5" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1k"/>
+<part name="R6" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="U$2" library="controller_boards" library_urn="urn:adsk.eagle:library:486412" deviceset="RC522" device="" package3d_urn="urn:adsk.eagle:package:486418/3"/>
