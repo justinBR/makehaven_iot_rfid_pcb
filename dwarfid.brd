@@ -171,6 +171,7 @@
 <text x="22.86" y="14.9225" size="1.27" layer="21">RC522-cs - gpio15(hcs)</text>
 <text x="22.86" y="13.335" size="1.27" layer="21">RC522-rst - gpio3</text>
 <text x="22.86" y="11.7475" size="1.27" layer="21">RC522-irq - gpio1</text>
+<text x="31.4325" y="31.115" size="1.778" layer="21">Version 2</text>
 </plain>
 <libraries>
 <library name="rowe_passives" urn="urn:adsk.eagle:library:487190">
