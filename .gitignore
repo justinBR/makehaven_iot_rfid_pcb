@@ -34,6 +34,5 @@ eagle.epf
 
 # file locks introduced since 7.x
 *.lck
-/gerber
 /reference
 

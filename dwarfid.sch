@@ -207,7 +207,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="controller_boards" urn="urn:adsk.eagle:library:486412">
 <packages>
-<package name="NODEMCU" urn="urn:adsk.eagle:footprint:486414/8" library_version="11">
+<package name="NODEMCU" urn="urn:adsk.eagle:footprint:486414/9" library_version="12">
 <wire x1="-12.7" y1="19.86496875" x2="-12.7" y2="-22.40496875" width="0.127" layer="21"/>
 <wire x1="-12.7" y1="-22.40496875" x2="-11.07341875" y2="-24.03155" width="0.127" layer="21" curve="90"/>
 <wire x1="-11.07341875" y1="-24.03155" x2="11.07341875" y2="-24.03155" width="0.127" layer="21"/>
@@ -249,14 +249,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="3V3_2" x="11.15" y="-19.05" drill="1.016" diameter="1.6764"/>
 <pad name="A0" x="-11.15" y="16.51" drill="1.016" diameter="1.6764"/>
 <pad name="D0" x="11.15" y="16.51" drill="1.016" diameter="1.6764"/>
-<text x="-7.62" y="20.32" size="2.54" layer="25">
-    &gt;Name
-    &gt;Name
-  </text>
-<text x="-7.62" y="-22.86" size="1.27" layer="27">
-    &gt;Value
-    &gt;Value
-  </text>
+<text x="-7.62" y="20.32" size="2.54" layer="25">&gt;Name</text>
+<text x="-7.62" y="-22.86" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="RC522" urn="urn:adsk.eagle:footprint:486416/1" library_version="2">
 <wire x1="-19.5" y1="29.75" x2="-19.5" y2="-29.75" width="0.127" layer="21"/>
@@ -281,13 +275,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
-<package3d name="NODEMCU" urn="urn:adsk.eagle:package:486417/10" type="model" library_version="11">
+<package3d name="NODEMCU" urn="urn:adsk.eagle:package:486417/11" type="model" library_version="12">
 </package3d>
 <package3d name="RC522" urn="urn:adsk.eagle:package:486418/3" type="model" library_version="3">
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="NODEMCU" urn="urn:adsk.eagle:symbol:486413/5" library_version="11">
+<symbol name="NODEMCU" urn="urn:adsk.eagle:symbol:486413/6" library_version="12">
 <pin name="A0/TOUT" x="-27.94" y="17.78" length="middle"/>
 <pin name="RSV1" x="-27.94" y="15.24" length="middle"/>
 <pin name="RSV2" x="-27.94" y="12.7" length="middle"/>
@@ -338,7 +332,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NODEMCU" urn="urn:adsk.eagle:component:486419/11" library_version="11">
+<deviceset name="NODEMCU" urn="urn:adsk.eagle:component:486419/12" library_version="12">
 <gates>
 <gate name="G$1" symbol="NODEMCU" x="0" y="0"/>
 </gates>
@@ -372,7 +366,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:486417/10"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:486417/11"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -380,7 +374,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="RC522" urn="urn:adsk.eagle:component:486420/11" library_version="11">
+<deviceset name="RC522" urn="urn:adsk.eagle:component:486420/12" library_version="12">
 <gates>
 <gate name="G$1" symbol="RC522" x="0" y="0"/>
 </gates>
@@ -864,7 +858,7 @@ Allows current flow when high potential at base.</description>
 </library>
 <library name="rowe_connectors" urn="urn:adsk.eagle:library:493587">
 <packages>
-<package name="JST_2MM_8POS" urn="urn:adsk.eagle:footprint:770024/1" library_version="4">
+<package name="JST_2MM_8POS" urn="urn:adsk.eagle:footprint:770024/2" library_version="6">
 <pad name="3" x="0" y="3" drill="0.85" diameter="1.4224"/>
 <pad name="4" x="0" y="1" drill="0.85" diameter="1.4224"/>
 <pad name="2" x="0" y="5" drill="0.85" diameter="1.4224"/>
@@ -878,22 +872,16 @@ Allows current flow when high potential at base.</description>
 <wire x1="1.6" y1="-8.95" x2="-6.25" y2="-8.95" width="0.1524" layer="21"/>
 <wire x1="-6.25" y1="-8.95" x2="-6.26" y2="8.95" width="0.1524" layer="21"/>
 <circle x="0.9" y="6.3" radius="0.316225" width="0.1524" layer="21"/>
-<text x="-2.1" y="9.1" size="1.778" layer="25">
-    &gt;Name
-    &gt;Name
-  </text>
-<text x="-2.2" y="-10.8" size="1.778" layer="27">
-    &gt;Value
-    &gt;Value
-  </text>
+<text x="-2.1" y="9.1" size="1.778" layer="25">&gt;Name</text>
+<text x="-2.2" y="-10.8" size="1.778" layer="27">&gt;Value</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="JST_2MM_8POS" urn="urn:adsk.eagle:package:770025/2" type="model" library_version="5">
+<package3d name="JST_2MM_8POS" urn="urn:adsk.eagle:package:770025/3" type="model" library_version="6">
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="JST8" urn="urn:adsk.eagle:symbol:770023/1" library_version="4">
+<symbol name="JST8" urn="urn:adsk.eagle:symbol:770023/2" library_version="6">
 <pin name="P$1" x="-5.08" y="7.62" length="short"/>
 <pin name="P$2" x="-5.08" y="5.08" length="short"/>
 <pin name="P$3" x="-5.08" y="2.54" length="short"/>
@@ -917,7 +905,7 @@ Allows current flow when high potential at base.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JST8_2MM_RIGHTANGLE" urn="urn:adsk.eagle:component:770026/2" library_version="5">
+<deviceset name="JST8_2MM_RIGHTANGLE" urn="urn:adsk.eagle:component:770026/3" library_version="6">
 <gates>
 <gate name="G$1" symbol="JST8" x="0" y="0"/>
 </gates>
@@ -934,7 +922,7 @@ Allows current flow when high potential at base.</description>
 <connect gate="G$1" pin="P$8" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:770025/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:770025/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1029,7 +1017,7 @@ With round pins</description>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="U$1" library="controller_boards" library_urn="urn:adsk.eagle:library:486412" deviceset="NODEMCU" device="" package3d_urn="urn:adsk.eagle:package:486417/10"/>
+<part name="U$1" library="controller_boards" library_urn="urn:adsk.eagle:library:486412" deviceset="NODEMCU" device="" package3d_urn="urn:adsk.eagle:package:486417/11"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C3" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="CAP_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1uf"/>
@@ -1045,7 +1033,7 @@ With round pins</description>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="A0" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="U$3" library="rowe_connectors" library_urn="urn:adsk.eagle:library:493587" deviceset="JST8_2MM_RIGHTANGLE" device="" package3d_urn="urn:adsk.eagle:package:770025/2"/>
+<part name="U$3" library="rowe_connectors" library_urn="urn:adsk.eagle:library:493587" deviceset="JST8_2MM_RIGHTANGLE" device="" package3d_urn="urn:adsk.eagle:package:770025/3"/>
 <part name="D3" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:848203/2"/>
 <part name="D4" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:848203/2"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
