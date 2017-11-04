@@ -207,7 +207,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="controller_boards" urn="urn:adsk.eagle:library:486412">
 <packages>
-<package name="NODEMCU" urn="urn:adsk.eagle:footprint:486414/6" locally_modified="yes" library_version="8" library_locally_modified="yes">
+<package name="NODEMCU" urn="urn:adsk.eagle:footprint:486414/8" library_version="11">
 <wire x1="-12.7" y1="19.86496875" x2="-12.7" y2="-22.40496875" width="0.127" layer="21"/>
 <wire x1="-12.7" y1="-22.40496875" x2="-11.07341875" y2="-24.03155" width="0.127" layer="21" curve="90"/>
 <wire x1="-11.07341875" y1="-24.03155" x2="11.07341875" y2="-24.03155" width="0.127" layer="21"/>
@@ -249,8 +249,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="3V3_2" x="11.15" y="-19.05" drill="1.016" diameter="1.6764"/>
 <pad name="A0" x="-11.15" y="16.51" drill="1.016" diameter="1.6764"/>
 <pad name="D0" x="11.15" y="16.51" drill="1.016" diameter="1.6764"/>
-<text x="-7.62" y="20.32" size="2.54" layer="25">&gt;Name</text>
-<text x="-7.62" y="-22.86" size="1.27" layer="27">&gt;Value</text>
+<text x="-7.62" y="20.32" size="2.54" layer="25">
+    &gt;Name
+    &gt;Name
+  </text>
+<text x="-7.62" y="-22.86" size="1.27" layer="27">
+    &gt;Value
+    &gt;Value
+  </text>
 </package>
 <package name="RC522" urn="urn:adsk.eagle:footprint:486416/1" library_version="2">
 <wire x1="-19.5" y1="29.75" x2="-19.5" y2="-29.75" width="0.127" layer="21"/>
@@ -275,13 +281,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
-<package3d name="NODEMCU" urn="urn:adsk.eagle:package:486417/8" type="model" library_version="8">
+<package3d name="NODEMCU" urn="urn:adsk.eagle:package:486417/10" type="model" library_version="11">
 </package3d>
 <package3d name="RC522" urn="urn:adsk.eagle:package:486418/3" type="model" library_version="3">
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="NODEMCU" urn="urn:adsk.eagle:symbol:486413/4" library_version="6">
+<symbol name="NODEMCU" urn="urn:adsk.eagle:symbol:486413/5" library_version="11">
 <pin name="A0/TOUT" x="-27.94" y="17.78" length="middle"/>
 <pin name="RSV1" x="-27.94" y="15.24" length="middle"/>
 <pin name="RSV2" x="-27.94" y="12.7" length="middle"/>
@@ -298,8 +304,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VIN" x="-27.94" y="-17.78" length="middle"/>
 <pin name="D10/GPIO1/TXD0" x="30.48" y="-12.7" length="middle" rot="R180"/>
 <pin name="D9/GPIO3/RXD0" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="D8/GPIO5/TXD2/HCS" x="30.48" y="-7.62" length="middle" rot="R180"/>
-<pin name="D7/GPIO3/RXD2/HMOSI" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="D8/GPIO15/TXD2/HCS" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="D7/GPIO13/RXD2/HMOSI" x="30.48" y="-5.08" length="middle" rot="R180"/>
 <pin name="D6/GPIO12/HMISO" x="30.48" y="-2.54" length="middle" rot="R180"/>
 <pin name="D5/GPIO14/HSCLK" x="30.48" y="0" length="middle" rot="R180"/>
 <pin name="D4/GPIO2/TXD1" x="30.48" y="7.62" length="middle" rot="R180"/>
@@ -332,7 +338,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NODEMCU" urn="urn:adsk.eagle:component:486419/8" locally_modified="yes" library_version="8" library_locally_modified="yes">
+<deviceset name="NODEMCU" urn="urn:adsk.eagle:component:486419/11" library_version="11">
 <gates>
 <gate name="G$1" symbol="NODEMCU" x="0" y="0"/>
 </gates>
@@ -351,8 +357,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="D4/GPIO2/TXD1" pad="D4"/>
 <connect gate="G$1" pin="D5/GPIO14/HSCLK" pad="D5"/>
 <connect gate="G$1" pin="D6/GPIO12/HMISO" pad="D6"/>
-<connect gate="G$1" pin="D7/GPIO3/RXD2/HMOSI" pad="D7"/>
-<connect gate="G$1" pin="D8/GPIO5/TXD2/HCS" pad="D8"/>
+<connect gate="G$1" pin="D7/GPIO13/RXD2/HMOSI" pad="D7"/>
+<connect gate="G$1" pin="D8/GPIO15/TXD2/HCS" pad="D8"/>
 <connect gate="G$1" pin="D9/GPIO3/RXD0" pad="D9"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND GND2 GND3 GND4"/>
@@ -366,7 +372,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:486417/8"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:486417/10"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -374,7 +380,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="RC522" urn="urn:adsk.eagle:component:486420/8" library_version="8">
+<deviceset name="RC522" urn="urn:adsk.eagle:component:486420/11" library_version="11">
 <gates>
 <gate name="G$1" symbol="RC522" x="0" y="0"/>
 </gates>
@@ -556,7 +562,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="rowe_actuators" urn="urn:adsk.eagle:library:493550">
 <packages>
-<package name="PS1720P02_PIEZO" urn="urn:adsk.eagle:footprint:493552/2" library_version="6">
+<package name="PS1720P02_PIEZO" urn="urn:adsk.eagle:footprint:493552/3" library_version="7">
 <circle x="0" y="0" radius="8.5" width="0.1524" layer="51"/>
 <circle x="0" y="0" radius="9" width="0.1524" layer="21"/>
 <pad name="P$1" x="0" y="5" drill="0.9" diameter="1.778"/>
@@ -564,21 +570,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-4" y="1" size="1.778" layer="25">&gt;Name</text>
 <text x="-4" y="-2" size="1.778" layer="27">&gt;Value</text>
 </package>
-<package name="LED_3_PIN_THROUGHHOLE" urn="urn:adsk.eagle:footprint:496805/1" library_version="5">
-<pad name="2" x="0" y="0" drill="0.9"/>
-<pad name="1" x="0" y="2.54" drill="0.9"/>
-<pad name="P$3" x="0" y="-2.54" drill="0.9"/>
-<circle x="0" y="0" radius="2.95" width="0.1524" layer="21"/>
-<wire x1="-1.8" y1="2.3" x2="1.8" y2="2.3" width="0.1524" layer="21"/>
-<wire x1="-1.9" y1="2.2" x2="1.9" y2="2.2" width="0.1524" layer="21"/>
-<text x="-4" y="3.4" size="1.778" layer="25">&gt;Name</text>
-<text x="-4.3" y="-5.1" size="1.778" layer="27">&gt;Value</text>
+<package name="WS2812B" urn="urn:adsk.eagle:footprint:848202/1" library_version="7">
+<smd name="P$1" x="-2.45" y="1.6" dx="1" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.45" y="-1.6" dx="1" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$4" x="2.45" y="1.6" dx="1" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$3" x="2.45" y="-1.6" dx="1" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.1524" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.1524" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.1524" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.1524" layer="51"/>
+<wire x1="-3.25" y1="2.75" x2="3.25" y2="2.75" width="0.1524" layer="21"/>
+<wire x1="3.25" y1="2.75" x2="3.25" y2="-2.75" width="0.1524" layer="21"/>
+<wire x1="3.25" y1="-2.75" x2="-3.25" y2="-2.75" width="0.1524" layer="21"/>
+<wire x1="-3.25" y1="-2.75" x2="-3.25" y2="2.75" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="-2.75" x2="3.25" y2="-2" width="0.1524" layer="27"/>
+<circle x="0" y="0" radius="2.0155625" width="0.1524" layer="51"/>
+<text x="-3.5" y="3" size="1.778" layer="25">&gt;Name</text>
+<text x="-3.25" y="-4.5" size="1.778" layer="27">&gt;Value</text>
+<text x="-0.5" y="2.5" size="1.778" layer="27" rot="R180">1</text>
+<text x="-0.75" y="-0.5" size="1.778" layer="27" rot="R180">2</text>
+<text x="1.75" y="-0.5" size="1.778" layer="27" rot="R180">3</text>
+<text x="1.75" y="2.5" size="1.778" layer="27" rot="R180">4</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="PS1720P02_PIEZO" urn="urn:adsk.eagle:package:493553/3" type="model" library_version="6">
+<package3d name="PS1720P02_PIEZO" urn="urn:adsk.eagle:package:493553/4" type="model" library_version="7">
 </package3d>
-<package3d name="LED_3_PIN_THROUGHHOLE" urn="urn:adsk.eagle:package:496806/2" type="model" library_version="5">
+<package3d name="WS2812B" urn="urn:adsk.eagle:package:848203/2" type="model" library_version="9">
 </package3d>
 </packages3d>
 <symbols>
@@ -606,29 +624,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="2.54" y="7.62" size="1.778" layer="95">&gt;Name</text>
 <text x="2.54" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
-<symbol name="LED_THREEPIN" urn="urn:adsk.eagle:symbol:496804/1" library_version="5">
-<pin name="1" x="0" y="7.62" visible="off" length="short" rot="R270"/>
-<pin name="3" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<text x="5.08" y="5.08" size="1.778" layer="95">&gt;Name</text>
-<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;Value</text>
+<symbol name="WS2812B" urn="urn:adsk.eagle:symbol:848201/1" library_version="7">
+<pin name="VDD" x="-10.16" y="2.54" length="short"/>
+<pin name="DOUT" x="-10.16" y="-2.54" length="short"/>
+<pin name="VSS" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="DIN" x="10.16" y="2.54" length="short" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PS1720P02_PIEZO_BUZZER" urn="urn:adsk.eagle:component:493554/4" prefix="B" uservalue="yes" library_version="6">
+<deviceset name="PS1720P02_PIEZO_BUZZER" urn="urn:adsk.eagle:component:493554/5" prefix="B" uservalue="yes" library_version="7">
 <gates>
 <gate name="G$1" symbol="PIEZO_BUZZER" x="0" y="0"/>
 </gates>
@@ -639,7 +649,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:493553/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:493553/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -647,19 +657,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="WP59EGW" urn="urn:adsk.eagle:component:496807/3" prefix="D" uservalue="yes" library_version="6">
+<deviceset name="WS2812B" urn="urn:adsk.eagle:component:848204/2" prefix="D" library_version="9">
 <gates>
-<gate name="G$1" symbol="LED_THREEPIN" x="0" y="0"/>
+<gate name="G$1" symbol="WS2812B" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LED_3_PIN_THROUGHHOLE">
+<device name="" package="WS2812B">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="DIN" pad="P$4"/>
+<connect gate="G$1" pin="DOUT" pad="P$2"/>
+<connect gate="G$1" pin="VDD" pad="P$1"/>
+<connect gate="G$1" pin="VSS" pad="P$3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:496806/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:848203/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -755,25 +766,6 @@ Allows current flow when high potential at base.</description>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
-<symbol name="PNP">
-<description>&lt;h3&gt; PNP Transistor&lt;/h3&gt;</description>
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="1.778" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="1.524" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="1.524" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="1.2192" y1="2.3114" x2="1.5748" y2="1.6256" width="0.2032" layer="94"/>
-<wire x1="1.143" y1="2.159" x2="1.397" y2="1.6256" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="2.032" x2="1.2192" y2="1.6256" width="0.2032" layer="94"/>
-<wire x1="0.9398" y1="1.8796" x2="1.0414" y2="1.651" width="0.2032" layer="94"/>
-<wire x1="0.8128" y1="1.778" x2="0.889" y2="1.6256" width="0.2032" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.254" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TRANS_NPN" prefix="Q">
@@ -868,87 +860,64 @@ Allows current flow when high potential at base.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANS_PNP" prefix="Q">
-<description>&lt;h3&gt;PNP transistor&lt;/h3&gt;
-&lt;p&gt;Current controlled devices typically used to amplify current or used as a switch.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9068”&gt;SparkFun Serial Enabled 16x2 LCD - Red on Black&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12772”&gt;SparkFun Logomatic&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="PNP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-PMBT3906|MMBT3906L" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-08052"/>
-<attribute name="VALUE" value="200mA/40V"/>
-</technology>
-</technologies>
-</device>
-<device name="-MMBT4403" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-09245"/>
-<attribute name="VALUE" value="600mA/40V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="rowe_connectors" urn="urn:adsk.eagle:library:493587">
 <packages>
-<package name="JST_2MM_8POS" library_version="2" library_locally_modified="yes">
+<package name="JST_2MM_8POS" urn="urn:adsk.eagle:footprint:770024/1" library_version="4">
 <pad name="3" x="0" y="3" drill="0.85" diameter="1.4224"/>
 <pad name="4" x="0" y="1" drill="0.85" diameter="1.4224"/>
 <pad name="2" x="0" y="5" drill="0.85" diameter="1.4224"/>
 <pad name="5" x="0" y="-1" drill="0.85" diameter="1.4224"/>
 <pad name="1" x="0" y="7" drill="0.85" diameter="1.4224"/>
 <pad name="6" x="0" y="-3" drill="0.85" diameter="1.4224"/>
+<pad name="7" x="0" y="-5" drill="0.85" diameter="1.4224"/>
+<pad name="8" x="0" y="-7" drill="0.85" diameter="1.4224"/>
 <wire x1="-6.26" y1="8.95" x2="1.6" y2="8.95" width="0.1524" layer="21"/>
 <wire x1="1.6" y1="8.95" x2="1.6" y2="-8.95" width="0.1524" layer="21"/>
 <wire x1="1.6" y1="-8.95" x2="-6.25" y2="-8.95" width="0.1524" layer="21"/>
 <wire x1="-6.25" y1="-8.95" x2="-6.26" y2="8.95" width="0.1524" layer="21"/>
 <circle x="0.9" y="6.3" radius="0.316225" width="0.1524" layer="21"/>
-<text x="-2.1" y="9.1" size="1.778" layer="25">&gt;Name</text>
-<text x="-2.2" y="-10.8" size="1.778" layer="27">&gt;Value</text>
-<pad name="7" x="0" y="-5" drill="0.85" diameter="1.4224"/>
-<pad name="8" x="0" y="-7" drill="0.85" diameter="1.4224"/>
+<text x="-2.1" y="9.1" size="1.778" layer="25">
+    &gt;Name
+    &gt;Name
+  </text>
+<text x="-2.2" y="-10.8" size="1.778" layer="27">
+    &gt;Value
+    &gt;Value
+  </text>
 </package>
 </packages>
+<packages3d>
+<package3d name="JST_2MM_8POS" urn="urn:adsk.eagle:package:770025/2" type="model" library_version="5">
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="JST8" library_version="2" library_locally_modified="yes">
+<symbol name="JST8" urn="urn:adsk.eagle:symbol:770023/1" library_version="4">
 <pin name="P$1" x="-5.08" y="7.62" length="short"/>
 <pin name="P$2" x="-5.08" y="5.08" length="short"/>
 <pin name="P$3" x="-5.08" y="2.54" length="short"/>
 <pin name="P$4" x="-5.08" y="0" length="short"/>
 <pin name="P$5" x="-5.08" y="-2.54" length="short"/>
 <pin name="P$6" x="-5.08" y="-5.08" length="short"/>
+<pin name="P$7" x="-5.08" y="-7.62" length="short"/>
+<pin name="P$8" x="-5.08" y="-10.16" length="short"/>
 <wire x1="-2.54" y1="10.16" x2="-2.54" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-12.7" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-12.7" x2="5.08" y2="10.16" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="94"/>
-<pin name="P$7" x="-5.08" y="-7.62" length="short"/>
-<pin name="P$8" x="-5.08" y="-10.16" length="short"/>
-<text x="-2.54" y="10.16" size="1.778" layer="95">&gt;Name</text>
-<text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;Value</text>
+<text x="-2.54" y="10.16" size="1.778" layer="95">
+    &gt;Name
+    &gt;Name
+  </text>
+<text x="-2.54" y="-15.24" size="1.778" layer="96">
+    &gt;Value
+    &gt;Value
+  </text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JST8_2MM_RIGHTANGLE" library_version="2" library_locally_modified="yes">
+<deviceset name="JST8_2MM_RIGHTANGLE" urn="urn:adsk.eagle:component:770026/2" library_version="5">
 <gates>
 <gate name="G$1" symbol="JST8" x="0" y="0"/>
 </gates>
@@ -964,6 +933,9 @@ Allows current flow when high potential at base.</description>
 <connect gate="G$1" pin="P$7" pad="7"/>
 <connect gate="G$1" pin="P$8" pad="8"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:770025/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1057,35 +1029,34 @@ With round pins</description>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="U$1" library="controller_boards" library_urn="urn:adsk.eagle:library:486412" deviceset="NODEMCU" device="" package3d_urn="urn:adsk.eagle:package:486417/8"/>
+<part name="U$1" library="controller_boards" library_urn="urn:adsk.eagle:library:486412" deviceset="NODEMCU" device="" package3d_urn="urn:adsk.eagle:package:486417/10"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C3" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="CAP_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1uf"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="B1" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="PS1720P02_PIEZO_BUZZER" device="" package3d_urn="urn:adsk.eagle:package:493553/3"/>
+<part name="B1" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="PS1720P02_PIEZO_BUZZER" device="" package3d_urn="urn:adsk.eagle:package:493553/4"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANS_NPN" device="-MMBT2222AL" value="mmbt3904"/>
 <part name="R5" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1k"/>
 <part name="R6" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="U$2" library="controller_boards" library_urn="urn:adsk.eagle:library:486412" deviceset="RC522" device="" package3d_urn="urn:adsk.eagle:package:486418/3"/>
-<part name="D1" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="WP59EGW" device="" package3d_urn="urn:adsk.eagle:package:496806/2"/>
-<part name="D2" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="WP59EGW" device="" package3d_urn="urn:adsk.eagle:package:496806/2"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R3" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1k"/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="R1" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="1k"/>
-<part name="Q4" library="SparkFun-DiscreteSemi" deviceset="TRANS_PNP" device="-PMBT3906|MMBT3906L" value="mmbt3906"/>
-<part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANS_PNP" device="-PMBT3906|MMBT3906L" value="mmbt3906"/>
-<part name="R2" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100"/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="A0" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="R4" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="RES_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100"/>
-<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U$3" library="rowe_connectors" library_urn="urn:adsk.eagle:library:493587" deviceset="JST8_2MM_RIGHTANGLE" device=""/>
+<part name="U$3" library="rowe_connectors" library_urn="urn:adsk.eagle:library:493587" deviceset="JST8_2MM_RIGHTANGLE" device="" package3d_urn="urn:adsk.eagle:package:770025/2"/>
+<part name="D3" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:848203/2"/>
+<part name="D4" library="rowe_actuators" library_urn="urn:adsk.eagle:library:493550" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:848203/2"/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="C1" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="CAP_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100nf"/>
+<part name="C2" library="rowe_passives" library_urn="urn:adsk.eagle:library:487190" deviceset="CAP_0603" device="" package3d_urn="urn:adsk.eagle:package:487200/4" value="100nf"/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="LDOUT" library="adafruit" deviceset="PINHD-1X1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1094,12 +1065,6 @@ With round pins</description>
 <wire x1="180.34" y1="71.12" x2="180.34" y2="20.32" width="0.1524" layer="97"/>
 <wire x1="180.34" y1="71.12" x2="274.32" y2="71.12" width="0.1524" layer="97"/>
 <wire x1="180.34" y1="71.12" x2="180.34" y2="177.8" width="0.1524" layer="97"/>
-<text x="231.14" y="119.38" size="1.778" layer="97">cs - d5</text>
-<text x="231.14" y="116.84" size="1.778" layer="97">sck - d3</text>
-<text x="231.14" y="111.76" size="1.778" layer="97">miso - d2</text>
-<text x="231.14" y="109.22" size="1.778" layer="97">reset - d1</text>
-<text x="231.14" y="106.68" size="1.778" layer="97">sda - d5</text>
-<text x="231.14" y="114.3" size="1.778" layer="97">mosi - d6</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -1116,22 +1081,21 @@ With round pins</description>
 <instance part="GND3" gate="1" x="35.56" y="17.78"/>
 <instance part="SUPPLY3" gate="G$1" x="35.56" y="53.34"/>
 <instance part="U$2" gate="G$1" x="231.14" y="144.78"/>
-<instance part="D1" gate="G$1" x="124.46" y="33.02" rot="R270"/>
-<instance part="D2" gate="G$1" x="104.14" y="33.02" rot="R270"/>
 <instance part="GND2" gate="1" x="220.98" y="40.64"/>
 <instance part="SUPPLY4" gate="G$1" x="220.98" y="45.72" rot="R90"/>
-<instance part="GND5" gate="1" x="104.14" y="7.62"/>
-<instance part="R3" gate="G$1" x="81.28" y="48.26" rot="R180"/>
-<instance part="SUPPLY5" gate="G$1" x="132.08" y="55.88"/>
-<instance part="R1" gate="G$1" x="119.38" y="48.26" rot="R180"/>
-<instance part="Q4" gate="G$1" x="129.54" y="48.26"/>
-<instance part="Q5" gate="G$1" x="93.98" y="48.26"/>
-<instance part="R2" gate="G$1" x="104.14" y="17.78" rot="R270"/>
-<instance part="SUPPLY6" gate="G$1" x="96.52" y="55.88"/>
 <instance part="A0" gate="G$1" x="33.02" y="142.24" rot="R180"/>
-<instance part="R4" gate="G$1" x="124.46" y="17.78" rot="R270"/>
-<instance part="GND1" gate="1" x="124.46" y="7.62"/>
 <instance part="U$3" gate="G$1" x="233.68" y="53.34"/>
+<instance part="D3" gate="G$1" x="111.76" y="48.26"/>
+<instance part="D4" gate="G$1" x="111.76" y="27.94"/>
+<instance part="SUPPLY7" gate="G$1" x="86.36" y="53.34"/>
+<instance part="GND7" gate="1" x="127" y="20.32"/>
+<instance part="GND8" gate="1" x="127" y="40.64"/>
+<instance part="SUPPLY8" gate="G$1" x="86.36" y="33.02"/>
+<instance part="C1" gate="G$1" x="86.36" y="48.26" rot="R90"/>
+<instance part="C2" gate="G$1" x="86.36" y="27.94" rot="R90"/>
+<instance part="GND9" gate="1" x="86.36" y="40.64"/>
+<instance part="GND10" gate="1" x="86.36" y="20.32"/>
+<instance part="LDOUT" gate="G$1" x="86.36" y="10.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1162,14 +1126,24 @@ With round pins</description>
 <pinref part="U$3" gate="G$1" pin="P$8"/>
 </segment>
 <segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="R2" gate="G$1" pin="P$2"/>
-<wire x1="104.14" y1="10.16" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="VSS"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="121.92" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="127" y1="25.4" x2="127" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="P$2"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="124.46" y1="12.7" x2="124.46" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="VSS"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="121.92" y1="45.72" x2="127" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="45.72" x2="127" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="P$1"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="P$1"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="RFID_CS" class="0">
@@ -1179,7 +1153,7 @@ With round pins</description>
 <pinref part="U$2" gate="G$1" pin="CS/SS/RX"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D8/GPIO5/TXD2/HCS"/>
+<pinref part="U$1" gate="G$1" pin="D8/GPIO15/TXD2/HCS"/>
 <wire x1="114.3" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
 <label x="116.84" y="116.84" size="1.778" layer="95"/>
 </segment>
@@ -1191,7 +1165,7 @@ With round pins</description>
 <pinref part="U$2" gate="G$1" pin="MOSI"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D7/GPIO3/RXD2/HMOSI"/>
+<pinref part="U$1" gate="G$1" pin="D7/GPIO13/RXD2/HMOSI"/>
 <wire x1="114.3" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="116.84" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -1255,19 +1229,25 @@ With round pins</description>
 <pinref part="U$3" gate="G$1" pin="P$7"/>
 </segment>
 <segment>
-<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<pinref part="Q4" gate="G$1" pin="E"/>
-<wire x1="132.08" y1="55.88" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
-<pinref part="Q5" gate="G$1" pin="E"/>
-<wire x1="96.52" y1="55.88" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="3V3"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="55.88" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+<wire x1="101.6" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="50.8" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="P$2"/>
+<junction x="86.36" y="50.8"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+<wire x1="101.6" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="30.48" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="P$2"/>
+<junction x="86.36" y="30.48"/>
 </segment>
 </net>
 <net name="RFID_IRQ" class="0">
@@ -1311,98 +1291,11 @@ With round pins</description>
 <label x="116.84" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="G_LED" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="P$2"/>
-<wire x1="76.2" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-<label x="71.12" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="D3/GPIO0/FLASH"/>
-<wire x1="114.3" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
-<label x="116.84" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="R_LED" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="P$2"/>
-<wire x1="114.3" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<label x="109.22" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="D2/GPIO4"/>
-<wire x1="114.3" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
-<label x="116.84" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="1"/>
-<pinref part="Q4" gate="G$1" pin="C"/>
-<wire x1="132.08" y1="43.18" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="38.1" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="33.02" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="Q4" gate="G$1" pin="B"/>
-<pinref part="R1" gate="G$1" pin="P$1"/>
-<wire x1="127" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="B"/>
-<pinref part="R3" gate="G$1" pin="P$1"/>
-<wire x1="91.44" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="C"/>
-<pinref part="D2" gate="G$1" pin="3"/>
-<wire x1="96.52" y1="43.18" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="3"/>
-<wire x1="96.52" y1="40.64" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="33.02" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<junction x="96.52" y="40.64"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A0/TOUT"/>
 <pinref part="A0" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="P$1"/>
-<wire x1="104.14" y1="27.94" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="P$1"/>
-<wire x1="124.46" y1="27.94" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D1/GPIO5"/>
-<wire x1="114.3" y1="139.7" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D0/GPIO16/USER/WAKE"/>
-<wire x1="114.3" y1="142.24" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -1477,12 +1370,48 @@ With round pins</description>
 <label x="218.44" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="DOUT"/>
+<wire x1="101.6" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="45.72" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="127" y1="38.1" x2="127" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="DIN"/>
+<wire x1="127" y1="30.48" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LIGHT_DIN" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="DIN"/>
+<wire x1="121.92" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
+<label x="124.46" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D3/GPIO0/FLASH"/>
+<wire x1="114.3" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<label x="116.84" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="DOUT"/>
+<wire x1="101.6" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="25.4" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="LDOUT" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="10.16" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
